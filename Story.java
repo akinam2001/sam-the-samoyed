@@ -44,16 +44,34 @@ public class Story
         System.out.println("3 = Shiba Inu");
         System.out.println("4 = Pomeranian");
         System.out.println("5 = Golden Retriever");
-        option = UserInput.getString();
-        if(option.equals("1")) {}
-        else if (option.equals("2")){}
-        else if (option.equals("3")) {}
-        else if (option.equals("4")){}
+        String option = UserInput.getString();
+        if(option.equals("1")) puppy = "Samoyed";
+        else if (option.equals("2")) puppy = "Corgi";
+        else if (option.equals("3")) puppy = "Shiba Inu";
+        else if (option.equals("4")) puppy = "Pomeranian";
+        else if (option.equals("5")) puppy = "Golden Retriever";
         else{
-          
+          System.out.println("INVALID INPUT");
         }
         /*
-        System.out.println("Are you sure you want to be named " + name + "? (yes or no)");
+        System.out.println("Now choose your class!");
+        System.out.println("1 = Warrior - Weapon: Sword");
+        System.out.println("2 = Archer - Weapon: Bow and Arrow");
+        System.out.println("3 = Mage - Weapon: Staff");
+        System.out.println("4 = Thief - Weapon: Throwing Knives");
+        System.out.println("5 = Pirate - Weapon: Claw");
+        String option = UserInput.getString();
+        if(option.equals("1")) puppy = "Samoyed";
+        else if (option.equals("2")) puppy = "Corgi";
+        else if (option.equals("3")) puppy = "Mage - Weapon: Staff";
+        else if (option.equals("4")) puppy = "Pomeranian";
+        else if (option.equals("5")) puppy = "Golden Retriever";
+        else{
+          System.out.println("INVALID INPUT");
+        }*/
+
+        /*
+        System.out.println("Are yo sure you want to be named " + name + "? (yes or no)");
         String option = UserInput.getString();
         if(option == "yes")one();
         else setUp();
