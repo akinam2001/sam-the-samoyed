@@ -7,6 +7,7 @@
  */
 public class Story
 {
+    private static String name;
     public static void main(){
         boolean menu = true;
         while(menu){
@@ -43,7 +44,7 @@ public class Story
         System.out.println("3 = Shiba Inu");
         System.out.println("4 = Pomeranian");
         System.out.println("5 = Golden Retriever");
-        String option = UserInput.getString();
+        option = UserInput.getString();
         if(option.equals("1")) {}
         else if (option.equals("2")){}
         else if (option.equals("3")) {}

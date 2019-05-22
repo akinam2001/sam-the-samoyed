@@ -1,0 +1,14 @@
+#BlueJ class context
+comment0.target=Story
+comment0.text=\n\ Write\ a\ description\ of\ class\ Story\ here.\n\n\ @author\ (your\ name)\n\ @version\ (a\ version\ number\ or\ a\ date)\n
+comment1.params=
+comment1.target=void\ main()
+comment2.params=
+comment2.target=void\ setUp()
+comment3.params=
+comment3.target=void\ one()
+comment4.params=
+comment4.target=void\ info()
+comment5.params=
+comment5.target=void\ credits()
+numComments=6
