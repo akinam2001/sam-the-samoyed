@@ -83,7 +83,9 @@ public class Story
         
     }
     public static void info(){
-        System.out.println("This game is about the adventures of Sam the Samoyed! He has the chance to fight a huge monster and prove that he is the best of the best! Will you be worthy enough to lead Sam to victory?");
+       System.out.println("This game is about the adventures of Sam the Samoyed!");
+        System.out.println("He has the chance to fight a huge monster and prove that he is the best of the best!");
+        System.out.println("Will you be worthy enough to lead Sam to victory?");
     }
     public static void credits(){
         System.out.println("CREDITS");
