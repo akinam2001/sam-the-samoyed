@@ -89,7 +89,7 @@ public class Story
     }
     public static void credits(){
         System.out.println("CREDITS");
-        System.out.println("Dictator: Anika Mahajan");
+        System.out.println("Dogtator: Anika Mahajan");
         System.out.println("Dog Puns Kween: Aria Koul");
         System.out.println("The Wof: Ester Tsai");
         System.out.println("Idea Hero: Allen Cao");
