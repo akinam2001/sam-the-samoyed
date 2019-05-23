@@ -80,7 +80,38 @@ public class Story
     }
     public static void one()
     {
-        
+        boolean valid = true;
+        while(valid){
+            System.out.println(name + " the " + puppy + "of humble upbringing sees a poster in the town square recruiting anyone brave enough to fight a feline demon some sort of monster");
+            System.out.println("Recruiter: Shall any brave soldier have the power to fight for King Larry III?");
+            System.out.println("What will you say?");
+            System.out.println("Option 1: I shall go for “His Royal Fluffiness”. This is going to be a PAWsitively fun adventure!");
+            System.out.println("Option 2: nah I’m good");
+            System.out.println("Option 3: I shall instead join the Merchants of Wonders and explore the world in search of glory");
+            System.out.println("choose by typing 1, 2, or 3 and pressing enter");
+            String choice = UserInput.getString();
+            if(choice.equals("1")){
+                valid = false;
+                pathOne();
+            }
+            else if (choice.equals("2")){
+                valid = false;
+                pathTwo();
+            }
+            else if (choice.equals("3")){
+                valid = false;
+                pathThree();
+            }
+            else{
+               System.out.println("INVALID INPUT");
+            }
+        }
+    }
+    public static void pathOne()
+    {
+        boolean path = true;
+        while(path
+        System.out.println(name + " 
     }
     public static void info(){
        System.out.println("This game is about the adventures of Sam the Samoyed!");
