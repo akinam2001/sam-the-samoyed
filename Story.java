@@ -8,6 +8,8 @@
 public class Story
 {
     private static String name;
+    private static String puppy;
+    
     public static void main(){
         boolean menu = true;
          System.out.println("Hi, I love doggies. Welcome to our PAWesome game!!?!");
