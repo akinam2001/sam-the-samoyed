@@ -174,6 +174,7 @@ public class Story
             else if (choice.equals("2")){
                 path = false;
                 System.out.println(" ");
+                System.out.println("You diffused the bomb!");
                 System.out.println("You saved the kingdom");
                 System.out.println("You, " + name + " the " + job + " " + puppy + ", are honored by the King and now are a Honorary Dawg");
                 System.out.println("You win!!");
