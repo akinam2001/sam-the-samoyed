@@ -127,7 +127,7 @@ public class Story
     public static void pathOne_A(){
         boolean path = true;
         while(path){
-            System.out.println("For your first mission, he has to go with Lucas the meek, Manny the average, and Alex the muscular to find a spy in the city and uncover the monster's secret plan);
+            System.out.println("For your first mission, he has to go with Lucas the meek, Manny the average, and Alex the muscular to find a spy in the city and uncover the monster's secret plan");
             System.out.println("Will you, " + name + " the " + job + " " + puppy + ", investigate the central park or the city gate entrance? (choose 1 or 2)");
              String choice = UserInput.getString();
             if(choice.equals("1")){
