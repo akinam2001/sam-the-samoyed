@@ -10,8 +10,8 @@ public class Story
     private static String name;
     public static void main(){
         boolean menu = true;
+         System.out.println("Hi, I love doggies. Welcome to our PAWesome game!!?!");
         while(menu){
-            System.out.println("Hi, I love doggies. Welcome to our PAWesome game!!?!");
             System.out.println("Options:");
             System.out.println("1. Info");
             System.out.println("2. Start");
