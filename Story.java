@@ -1,4 +1,3 @@
-
 /**
  * Write a description of class Story here.
  *
@@ -46,12 +45,12 @@ public class Story
         System.out.println("3 = Shiba Inu");
         System.out.println("4 = Pomeranian");
         System.out.println("5 = Golden Retriever");
-        String option = UserInput.getString();
-        if(option.equals("1")) puppy = "Samoyed";
-        else if (option.equals("2")) puppy = "Corgi";
-        else if (option.equals("3")) puppy = "Shiba Inu";
-        else if (option.equals("4")) puppy = "Pomeranian";
-        else if (option.equals("5")) puppy = "Golden Retriever";
+        String choice = UserInput.getString();
+        if(choice.equals("1")) puppy = "Samoyed";
+        else if (choice.equals("2")) puppy = "Corgi";
+        else if (choice.equals("3")) puppy = "Shiba Inu";
+        else if (choice.equals("4")) puppy = "Pomeranian";
+        else if (choice.equals("5")) puppy = "Golden Retriever";
         else{
           System.out.println("INVALID INPUT");
           setUp();
@@ -62,19 +61,19 @@ public class Story
         System.out.println("3 = Mage - Weapon: Staff");
         System.out.println("4 = Thief - Weapon: Throwing Knives");
         System.out.println("5 = Pirate - Weapon: Claw");
-        String option = UserInput.getString();
-        if(option.equals("1")) job = "Warrior";
-        else if (option.equals("2")) puppy = "Corgi";
-        else if (option.equals("3")) puppy = "Mage - Weapon: Staff";
-        else if (option.equals("4")) puppy = "Pomeranian";
-        else if (option.equals("5")) puppy = "Golden Retriever";
+        String decide = UserInput.getString();
+        if(decide.equals("1")) job = "Warrior";
+        else if (decide.equals("2")) job = "Corgi";
+        else if (decide.equals("3")) job = "Mage - Weapon: Staff";
+        else if (decide.equals("4")) job = "Pomeranian";
+        else if (decide.equals("5")) job = "Golden Retriever";
         else{
           System.out.println("INVALID INPUT");
           setUp();
         }
         System.out.println("Are you sure you want to be named "  + name + " the "+ job + " " + puppy + " ? (yes or no)");
-        String option = UserInput.getString();
-        if(option == "yes")one();
+        String option1 = UserInput.getString();
+        if(option1.equals( "yes"))one();
         else setUp();
     }
     public static void one()
@@ -99,7 +98,7 @@ public class Story
             }
             else if (choice.equals("3")){
                 valid = false;
-                pathThree();
+                //pathThree();
             }
             else{
                System.out.println("INVALID INPUT");
@@ -137,7 +136,7 @@ public class Story
             }
             else if (choice.equals("2")){
                 path = false;
-                pathOne_B();
+                //pathOne_A_2();
             }
             else{
                System.out.println("INVALID INPUT");
@@ -145,6 +144,7 @@ public class Story
         }
         
     }
+    
     public static void info(){
        System.out.println("This game is about the adventures of Sam the Samoyed!");
         System.out.println("He has the chance to fight a huge monster and prove that he is the best of the best!");
