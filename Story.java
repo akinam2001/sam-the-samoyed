@@ -122,11 +122,13 @@ public class Story
             System.out.println("Roll the die");
             System.out.println(random);
             if(random >= 3){
+                path = false;
                 System.out.println(" ");
                 System.out.println("Congratulations, you have been promoted to the rank of Canine Knight!");
                 pathOne_A();
             }
             else{
+                path = false;
                 System.out.println(" ");
                 System.out.println("Game Over");
                 System.out.println(" ");
@@ -136,7 +138,7 @@ public class Story
     public static void pathOne_A(){
         boolean path = true;
         while(path){
-            System.out.println("For your first mission, he has to go with Lucas the meek, Manny the average, and Alex the muscular to find a spy in the city and uncover the monster's secret plan");
+            System.out.println("For your first mission, you have to go with Lucas the meek, Manny the average, and Alex the muscular to find a spy in the city and uncover the monster's secret plan");
             System.out.println("Will you, " + name + " the " + job + " " + puppy + ", investigate the central park or the city gate entrance? (choose 1 or 2)");
              String choice = UserInput.getString();
             if(choice.equals("1")){
@@ -149,7 +151,7 @@ public class Story
             else if (choice.equals("2")){
                 path = false;
                 System.out.println(" ");
-                //pathOne_A_2();
+                pathOne_A_2();
             }
             else{
                System.out.println("INVALID INPUT");
@@ -157,9 +159,63 @@ public class Story
         }
         
     }
+    public static void pathOne_A_2(){
+        boolean path = true;
+        while(path){
+            System.out.println("You investigate the city gate");
+            System.out.println("You find a bomb on a bench");
+            System.out.println("Will you, " + name + " the " + job + " " + puppy + ", cut the yellow wire or the blue wire? (choose 1 or 2)");
+             String choice = UserInput.getString();
+            if(choice.equals("1")){
+                path = false;
+                System.out.println(" ");
+                pathOne_A_2_b();
+            }
+            else if (choice.equals("2")){
+                path = false;
+                System.out.println(" ");
+                System.out.println("You saved the kingdom");
+                System.out.println("You, " + name + " the " + job + " " + puppy + ", are honored by the King and now are a Honorary Dawg");
+                System.out.println("You win!!");
+                System.out.println(" ");
+            }
+            else{
+               System.out.println("INVALID INPUT");
+            }
+        }
+        
+    }
+    public static void pathOne_A_2_b(){
+        boolean path = true;
+        while(path){
+            System.out.println("You picked the yellow wire");
+            System.out.println("The bomb explodes and opens up the gates");
+            System.out.println("A whole swarm of monsters appear and invade");
+            System.out.println("If you roll a 5 or higher, you will defeat the monsters");
+            int random = (int) ((Math.random() * 6) + 1);
+            System.out.println(" ");
+            System.out.println("Roll the die");
+            System.out.println(" ");
+            System.out.println(random);
+            if(random >= 5){
+                path = false;
+                System.out.println(" ");
+                System.out.println("Congratulations, you defeated the monsters");
+                System.out.println("You saved the kingdom");
+                System.out.println("You, " + name + " the " + job + " " + puppy + ", are honored by the King and now are a Honorary Dawg");
+                System.out.println("You win!!");
+            }
+            else{
+                path = false;
+                System.out.println(" ");
+                System.out.println("Game Over");
+                System.out.println(" ");
+            }
+        
+    }
     public static void info(){
         System.out.println(" ");
-       System.out.println("This game is about the adventures of Sam the Samoyed!");
+        System.out.println("This game is about the adventures of Sam the Samoyed!");
         System.out.println("He has the chance to fight a huge monster and prove that he is the best of the best!");
         System.out.println("Will you be worthy enough to lead Sam to victory?");
         System.out.println(" ");
