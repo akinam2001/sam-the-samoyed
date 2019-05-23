@@ -81,11 +81,11 @@ public class Story
     {
         boolean valid = true;
         while(valid){
-            System.out.println(name + " the " + puppy + "of humble upbringing sees a poster in the town square recruiting anyone brave enough to fight a feline demon some sort of monster");
-            System.out.println("Recruiter: Shall any brave soldier have the power to fight for King Larry III?");
+            System.out.println("One day, while strolling the town square plaza and browsing along the busy markets, " + name + " the " + puppy + " , a canine of humble upbringing spots a poster recruiting anyone brave enough to slay the monster");
+            System.out.println("Recruiter: Recruiting all valiant enough to fight on behalf of King Roofster IV");
             System.out.println("What will you say?");
             System.out.println("Option 1: I shall go for “His Royal Fluffiness”. This is going to be a PAWsitively fun adventure!");
-            System.out.println("Option 2: nah I’m good");
+            System.out.println("Option 2: I’m tired… Might as well fetch some scrumptious food and take a nap.");
             System.out.println("Option 3: I shall instead join the Merchants of Wonders and explore the world in search of glory");
             System.out.println("choose by typing 1, 2, or 3 and pressing enter");
             String choice = UserInput.getString();
@@ -110,9 +110,23 @@ public class Story
     {
         boolean path = true;
         while(path){
-            System.out.println(name + " 
-                               
+            System.out.println(name + ", you must fight a fearsome beast. In order to clear this first trial placed upon you, you must demonstrate that you possess the power");
+            System.out.println("If you roll a 3 or higher, you will continue on your journey");
+            int random = (int) ((Math.random() * 6) + 1);
+            System.out.println("Roll the die");
+            System.out.println(random);
+            if(random >= 3){
+                System.out.println("Congratulations, you have been promoted to the rank of Canine Knight!");
+                pathOne_A();
+            }
+            else{
+                System.out.println("Game Over");
+            }
         }
+    }
+    public static void pathOne_A(){
+        
+        
     }
     public static void info(){
        System.out.println("This game is about the adventures of Sam the Samoyed!");
