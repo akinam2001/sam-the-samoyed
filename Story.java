@@ -9,7 +9,7 @@ public class Story
 {
     private static String name;
     private static String puppy;
-    
+    private static String job;
     public static void main(){
         boolean menu = true;
          System.out.println("Hi, I love doggies. Welcome to our PAWesome game!!?!");
@@ -54,8 +54,8 @@ public class Story
         else if (option.equals("5")) puppy = "Golden Retriever";
         else{
           System.out.println("INVALID INPUT");
+          setUp();
         }
-        /*
         System.out.println("Now choose your class!");
         System.out.println("1 = Warrior - Weapon: Sword");
         System.out.println("2 = Archer - Weapon: Bow and Arrow");
@@ -63,22 +63,19 @@ public class Story
         System.out.println("4 = Thief - Weapon: Throwing Knives");
         System.out.println("5 = Pirate - Weapon: Claw");
         String option = UserInput.getString();
-        if(option.equals("1")) puppy = "Samoyed";
+        if(option.equals("1")) job = "Warrior";
         else if (option.equals("2")) puppy = "Corgi";
         else if (option.equals("3")) puppy = "Mage - Weapon: Staff";
         else if (option.equals("4")) puppy = "Pomeranian";
         else if (option.equals("5")) puppy = "Golden Retriever";
         else{
           System.out.println("INVALID INPUT");
-        }*/
-
-        /*
-        System.out.println("Are yo sure you want to be named " + name + "? (yes or no)");
+          setUp();
+        }
+        System.out.println("Are you sure you want to be named "  + name + " the "+ job + " " + puppy + " ? (yes or no)");
         String option = UserInput.getString();
         if(option == "yes")one();
         else setUp();
-        */
-
     }
     public static void one()
     {
@@ -98,7 +95,7 @@ public class Story
             }
             else if (choice.equals("2")){
                 valid = false;
-                pathTwo();
+                System.out.println("Game Over");
             }
             else if (choice.equals("3")){
                 valid = false;
@@ -112,15 +109,11 @@ public class Story
     public static void pathOne()
     {
         boolean path = true;
-        while(path
-        System.out.println(name + " 
+        while(path){
+            System.out.println(name + " 
+                               
+        }
     }
-    
-    public static void pathThree()
-    {
-        
-    }
-                           
     public static void info(){
        System.out.println("This game is about the adventures of Sam the Samoyed!");
         System.out.println("He has the chance to fight a huge monster and prove that he is the best of the best!");
