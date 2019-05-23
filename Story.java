@@ -12,7 +12,7 @@ public class Story
     private static String job;
     public static void main(){
         boolean menu = true;
-         System.out.println("Hi, I love doggies. Welcome to our PAWesome game!!?!");
+         System.out.println("Hi, I love doggies. Welcome to our PAWesome game!!!");
         while(menu){
             System.out.println("Options:");
             System.out.println("1. Info");
@@ -125,7 +125,24 @@ public class Story
         }
     }
     public static void pathOne_A(){
-        
+        boolean path = true;
+        while(path){
+            System.out.println("For your first mission, he has to go with Lucas the meek, Manny the average, and Alex the muscular to find a spy in the city and uncover the monster's secret plan);
+            System.out.println("Will you, " + name + " the " + job + " " + puppy + ", investigate the central park or the city gate entrance? (choose 1 or 2)");
+             String choice = UserInput.getString();
+            if(choice.equals("1")){
+                path = false;
+                System.out.println("You found nothin");
+                System.out.println("Game Over");
+            }
+            else if (choice.equals("2")){
+                path = false;
+                pathOne_B();
+            }
+            else{
+               System.out.println("INVALID INPUT");
+            }
+        }
         
     }
     public static void info(){
