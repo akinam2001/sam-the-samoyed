@@ -301,7 +301,7 @@ public class Story
         boolean path = true;
         System.out.println("----------------------------------------------------------------------------------------");
         System.out.println(name + " successfully completed the maze!");
-        System.out.println(name + " escapes the dungeon successfully, but is now very poor.");
+        System.out.println(name + " escapes the dungeon successfully but is now very poor.");
         System.out.println("One sunny afternoon, " + name + "  troupes past the castle gates and witnesses an outbreak of war between King Roofster IV’s army and a conjured, sinister creature.");
         System.out.println("Would you (1) intervene to help or (2) escape and leave the royal soldiers to fend for themselves?");
         String choice = UserInput.getString();
