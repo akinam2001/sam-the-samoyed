@@ -69,7 +69,7 @@ public class Story
         else if (decide.equals("4")) job = "Thief";
         else if (decide.equals("5")) job = "Pirate";
         else{
-            System.out.println("INVALID INPUT");
+            System.out.println("INVALID INPUT!");
         }
 
         System.out.println("Are you sure you want to be named "  + name + " the "+ job + " " + puppy + "? (1) Yes  (2) No");
@@ -171,7 +171,7 @@ public class Story
             System.out.println("----------------------------------------------------------------------------------------");
             System.out.println("You investigate the city gate");
             System.out.println("You find a bomb on a bench");
-            System.out.println("Will you, " + name + " the " + job + " " + puppy + ", (1)cut the yellow wire or (2)the blue wire?");
+            System.out.println("Will you, " + name + " the " + job + " " + puppy + ", (1) cut the yellow wire or (2) the blue wire?");
             String choice = UserInput.getString();
             if(choice.equals("1")){
                 path = false;
