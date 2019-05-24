@@ -350,7 +350,7 @@ public class Story
         System.out.println("Idea Hero: Allen Cao");
         System.out.println("Creative Paragon: Alex Shen");
         System.out.println("You are PAWsitively amazing wof!");
-        System.out.println("");
+        System.out.println("----------------------------------------------------------------------------------------");
     }
 }
 
