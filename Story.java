@@ -1,4 +1,3 @@
-
 public class Story
 {
     private static String name;
@@ -91,8 +90,8 @@ public class Story
             System.out.println("What will you say?");
             System.out.println("");
             System.out.println("Option 1: I shall go for “His Royal Fluffiness”. This is going to be a PAWsitively fun adventure!");
-            System.out.println("Option 2: I’m tired… Might as well fetch some scrumptious food and take a nap.");
-            System.out.println("Option 3: I shall instead join the Merchants of Wonders and explore the world in search of glory");
+            System.out.println("Option 2: I’m tired… Might as well fetch some scrumptious doggo food and take a nap.");
+            System.out.println("Option 3: I shall instead join the Mercenaries of Woofwonders and plunder the world's riches for glory!");
             System.out.println("choose by typing 1, 2, or 3 and pressing enter");
             String choice = UserInput.getString();
             if(choice.equals("1")){
@@ -291,7 +290,7 @@ public class Story
     public static void pathThree_B()
     {
         System.out.println("----------------------------------------------------------------------------------------");
-        System.out.println("An honorary dawg retaliates and puts down the whole invasion. " + name + ", blinded by greed, is thrown into the castle prison."); 
+        System.out.println("King Roofster IV's Honorary Doge Knight retaliates and puts down the whole invasion. " + name + ", blinded by greed, is thrown into the castle prison."); 
         System.out.println("GAME OVER");
         System.out.println("");
     }
@@ -302,7 +301,7 @@ public class Story
         System.out.println("----------------------------------------------------------------------------------------");
         System.out.println(name + " successfully completed the maze!");
         System.out.println(name + " escapes the dungeon successfully but is now very poor.");
-        System.out.println("One sunny afternoon, " + name + "  troupes past the castle gates and witnesses an outbreak of war between King Roofster IV’s army and a conjured, sinister creature.");
+        System.out.println("One sunny afternoon, " + name + "  troupes past the castle gates and witnesses an outbreak of war between King Roofster IV’s army and a sinister, 10 foot silver feline with razor sharp claws.");
         System.out.println("Would you (1) intervene to help or (2) escape and leave the royal soldiers to fend for themselves?");
         String choice = UserInput.getString();
         if(choice.equals("1"))
@@ -347,10 +346,9 @@ public class Story
         System.out.println("Dogtator: Anika Mahajan");
         System.out.println("Dog Puns Kween: Aria Koul");
         System.out.println("The Wof: Ester Tsai");
-        System.out.println("Idea Hero: Allen Cao");
-        System.out.println("Creative Paragon: Alex Shen");
+        System.out.println("Idea Doge: Allen Cao");
+        System.out.println("Woof Paragon: Alex Shen");
         System.out.println("You are PAWsitively amazing wof!");
         System.out.println("----------------------------------------------------------------------------------------");
     }
 }
-
